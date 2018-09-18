@@ -14,7 +14,7 @@ describe App do
   end
 
   describe 'POST /' do
-    xit "displays string results" do
+    it "displays string results" do
       visit '/'
 
       fill_in(:user_text, :with => "Green Eggs and Ham")
@@ -23,7 +23,7 @@ describe App do
       expect(page).to have_text("Number of Words: 4")
       expect(page).to have_text("Vowels: 5")
       expect(page).to have_text("Consonants: 10")
-      expect(page).to have_text("Most Common Letter: G, used 3 times")
+      expect(page).to have_text("Most Common Letter: g, used 3 times")
     end
   end
 
